@@ -29,7 +29,7 @@ const PostPagination = (props) => (
   <Pagination rowsPerPageOptions={[10, 25, 50, 100]} {...props} />
 );
 
-// Filtre
+// Filtre/Tags
 const postFilters = [
   <TextInput label="Search" source="q" alwaysOn />,
   <TextInput label="Title" source="title" defaultValue="Hello, World!" />,
@@ -85,12 +85,14 @@ export const PostList = ({ record, permissions, ...props }) => {
         <TextField source="noms" />
         <TextField source="noms japonais" />
         <TextField source="alias" />
+        <TextField source="characterType" />
         <TextField source="autres appelations" />
         {/* <TextField source="body" /> */}
         <TextField source="biologicalInformations" />
+
         <TextField source="professionalInformations" />
         {/* <TextField source="otherInformations" />
-        <TextField source="characterType" />
+        
         <TextField source="actingInformations" />   */}
         {/* <BooleanField label="Commentable" source="commentable" /> */}
         <MyEditButton />

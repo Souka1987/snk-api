@@ -1,6 +1,5 @@
 {
   "name": "snk-api",
-  "proxy": "http://localhost:1984",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
