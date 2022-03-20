@@ -2,14 +2,19 @@
   "posts": [
     {
       "published_at": "2022-03-19T22:43:11.426Z",
-      "biologicalInformations": "humain",
       "professionalInformations": "soldat",
+      "biologicalInformations": "humain",
       "autres appelations": "Eren Yeager",
-      "type": "protagoniste principal",
       "noms japonais": "アルミン・アルレルト",
       "noms": "Eren Jeager",
       "alias": "l'idiot suicidaire",
       "id": "3QHZV-f"
+    }
+  ],
+  "affiliation": [
+    {
+      "id": "compulsive",
+      "name": "resources.affiliation.data.compulsive"
     }
   ],
   "comments": [
