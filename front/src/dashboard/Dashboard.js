@@ -1,9 +1,13 @@
-import * as React from "react";
-import { Card, CardContent, CardHeader } from "@material-ui/core";
+import * as React from 'react';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import CardHeader from '@material-ui/core/CardHeader';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
-  <Card>
-    <CardHeader title="Welcome to the administration" />
-    <CardContent>Lorem ipsum sic dolor amet...</CardContent>
-  </Card>
+    <Card>
+        <CardHeader title="Welcome to the administration" />
+        <CardContent>Lorem ipsum sic dolor amet...</CardContent>
+    </Card>
 );
+

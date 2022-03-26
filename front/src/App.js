@@ -2,8 +2,10 @@ import jsonServerProvider from "ra-data-json-server";
 import { Admin, Resource, EditGuesser } from "react-admin";
 import { fetchUtils } from "ra-core";
 import Dashboard from "./dashboard/Dashboard";
-import { PostList } from "./posts/PostList";
+import Characters from "./characters/Characters";
 import { PostCreate } from "./posts/PostCreate";
+import { CategoryCreate } from "./posts/CategoryCreate";
+import Categories from "./characters/Categories";
 
 // Config CORS
 const httpClient = (url, options = {}) => {
@@ -23,6 +25,7 @@ function App() {
   return (
     <Admin
       dashboard={Dashboard}
+      characters={Characters}
       dataProvider={jsonServerProvider(
         "http://localhost:1984",
         fetchUtils.fetchJson,
@@ -30,10 +33,16 @@ function App() {
       )}
     >
       <Resource
-        name="posts"
-        list={PostList}
+        name="characters"
+        list={Characters}
         edit={EditGuesser}
         create={PostCreate}
+      />
+      <Resource
+        name="categories"
+        list={Categories}
+        edit={EditGuesser}
+        create={CategoryCreate}
       />
     </Admin>
   );

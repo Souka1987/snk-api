@@ -2,7 +2,7 @@ import React from "react";
 import { Fragment } from "react";
 import Button from "@material-ui/core/Button";
 import { BulkDeleteButton, TextInput } from "react-admin";
-import ResetViewsButton from "./ResetViewsButton";
+import ResetViewsButton from "../posts/ResetViewsButton";
 import {
   List,
   Datagrid,
@@ -50,7 +50,6 @@ const ListActions = (props) => {
 
   return (
     <TopToolbar className={className} {...sanitizeListRestProps(rest)}>
-      {/* <FilterButton /> */}
       <CreateButton />
       <ExportButton disabled={total === 0} maxResults={maxResults} />
       {/* Add your custom actions */}
@@ -66,7 +65,7 @@ const ListActions = (props) => {
   );
 };
 
-export const PostList = ({ record, permissions, ...props }) => {
+const Characters = ({ record, permissions, ...props }) => {
   return (
     <List
       // component="div"
@@ -82,15 +81,15 @@ export const PostList = ({ record, permissions, ...props }) => {
       <Datagrid>
         <TextField source="id" />
         <DateField source="published_at" />
-        <TextField source="noms" />
-        <TextField source="noms japonais" />
+        <TextField source="first_name" />
+        <TextField source="last_name" />
+        <TextField source="jap_name" />
         <TextField source="alias" />
-        <TextField source="characterType" />
-        <TextField source="autres appelations" />
+        <TextField source="other_spellings" />
         {/* <TextField source="body" /> */}
-        <TextField source="biologicalInformations" />
-
-        <TextField source="professionalInformations" />
+        {/* <TextField source="biologicalInformations" /> */}
+        {/* <TextField source="characterType" /> */}
+        {/* <TextField source="professionalInformations" /> */}
         {/* <TextField source="otherInformations" />
         
         <TextField source="actingInformations" />   */}
@@ -101,3 +100,5 @@ export const PostList = ({ record, permissions, ...props }) => {
     </List>
   );
 };
+
+export default Characters;
