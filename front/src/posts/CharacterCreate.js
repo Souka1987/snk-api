@@ -1,22 +1,20 @@
-import {
-  Create,
-  DateInput,
-  SimpleForm,
-  TextInput,
-} from "react-admin";
+import { Create, DateInput, SimpleForm, TextInput } from "react-admin";
 import { makeStyles } from "@material-ui/core/styles";
+// import { Avatar } from "@material-ui/core";
+
 
 export const styles = {
+  // avatar: { display: "inline-block" },
   first_name: { display: "inline-block" },
   last_name: { display: "inline-block", margin: 10 },
-  jap_name: { display: "inline-block", margin: 10 },
+  japanese_name: { display: "inline-block", margin: 10 },
   alias: { display: "inline-block", margin: 10 },
   other_spellings: { maxWidth: 544, margin: 10 },
   published_at: { maxWidth: 544, margin: 10 },
 };
 const useStyles = makeStyles(styles);
 
-export const PostCreate = (props) => {
+export const CharacterCreate = (props) => {
   const classes = useStyles(props);
 
   // Components
@@ -24,7 +22,6 @@ export const PostCreate = (props) => {
     <Create {...props}>
       <SimpleForm>
         <TextInput
-          required
           autoFocus
           source="last_name"
           formClassName={classes.last_name}
@@ -35,16 +32,17 @@ export const PostCreate = (props) => {
           source="first_name"
           formClassName={classes.first_name}
         />
-        <TextInput formClassName={classes.jap_name} source="jap_name" />
         <TextInput
-          formClassName={classes.alias}
-          source="alias"
-          options={{ multiline: true }}
+          required
+          formClassName={classes.japanese_name}
+          source="japanese_name"
         />
+        <TextInput formClassName={classes.alias} source="alias" />
         <TextInput
           fullWidth
           formClassName={classes.other_spellings}
           source="other_spellings"
+          options={{ multiline: true }}
         />
         <DateInput
           label="Publication date"

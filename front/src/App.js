@@ -3,9 +3,21 @@ import { Admin, Resource, EditGuesser } from "react-admin";
 import { fetchUtils } from "ra-core";
 import Dashboard from "./dashboard/Dashboard";
 import Characters from "./characters/Characters";
-import { PostCreate } from "./posts/PostCreate";
-import { CategoryCreate } from "./posts/CategoryCreate";
-import Categories from "./characters/Categories";
+import { CharacterCreate } from "./posts/CharacterCreate";
+import { NavigationCreate } from "./posts/NavigationCreate";
+import Categories from "./categories/Categories";
+import Navigation from "navigation/Navigation";
+import authProvider from './authProvider';
+import {  PostShow } from './characters/Characters';
+import { NavShow } from "navigation/Navigation";
+// import i18nProvider from './i18n/i18nProvider';
+
+// Traduction langues
+// const i18nProvider = {
+//   translate: (key, options) => string,
+//   changeLocale: locale => Promise,
+//   getLocale: () => string,
+// }
 
 // Config CORS
 const httpClient = (url, options = {}) => {
@@ -21,11 +33,15 @@ const httpClient = (url, options = {}) => {
 // eslint-disable-next-line no-unused-vars
 const dataProvider = jsonServerProvider("http://localhost:1984", httpClient);
 
+
+
 function App() {
   return (
     <Admin
       dashboard={Dashboard}
       characters={Characters}
+      authProvider={authProvider}
+      // i18nProvider={i18nProvider}
       dataProvider={jsonServerProvider(
         "http://localhost:1984",
         fetchUtils.fetchJson,
@@ -36,13 +52,23 @@ function App() {
         name="characters"
         list={Characters}
         edit={EditGuesser}
-        create={PostCreate}
+        create={CharacterCreate}
+        show={PostShow}
+       
       />
       <Resource
         name="categories"
         list={Categories}
         edit={EditGuesser}
-        create={CategoryCreate}
+        // create={CategoryCreate}
+      />
+      <Resource
+        name="navigation"
+        list={Navigation}
+        edit={EditGuesser}
+        create={NavigationCreate}
+        show={NavShow}
+        
       />
     </Admin>
   );

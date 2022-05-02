@@ -1,7 +1,7 @@
 import React from "react";
 import {
   List,
-  TextInput,
+  //   TextInput,
   Datagrid,
   TextField,
   DateField,
@@ -10,14 +10,14 @@ import {
   Show,
   SimpleForm,
   Create,
+  // Edit,
   sanitizeListRestProps,
   EditButton,
   ShowButton,
   DeleteButton,
-  RichTextField,
+//   RichTextField,
 } from "react-admin";
 import { CreateButton, ExportButton } from "ra-ui-materialui";
-
 // import { Avatar } from "@material-ui/core";
 
 // Liste des actions
@@ -48,7 +48,7 @@ const ListActions = (props) => {
   );
 };
 
-const Characters = ({ record, permissions, ...props }) => {
+const Navigation = ({ record, permissions, ...props }) => {
   return (
     <List
       // component="div"
@@ -60,50 +60,56 @@ const Characters = ({ record, permissions, ...props }) => {
     >
       <Datagrid>
         <TextField source="id" />
+        <TextField source="BiologicalInformations" />
+        {/* <TextField source="professionalInformations" />
+        <TextField source="otherInformations" />
+        <TextField source="actingInformations" />   */}
+        {/* <BooleanField label="Commentable" source="commentable" /> */}
+        {/* <ShowButton basePath="/comments" label="Show" record={record} /> */}
         <DateField source="published_at" />
-        {/* <Avatar src="" /> */}
-        <TextField source="first_name" />
-        <TextField source="last_name" />
-        <TextField source="japanese_name" />
-        <TextField source="alias" />
-        <TextField source="other_spellings" />
         <ShowButton label="" />
         <EditButton label="" />
-        <DeleteButton label="" redirect={false} />
+        <DeleteButton label="" redirect={true} />
       </Datagrid>
     </List>
   );
 };
 
-export const PostShow = (props) => (
+export const NavShow = (props) => (
   <Show {...props}>
     <SimpleShowLayout>
       <TextField source="id" />
+      <TextField source="BiologicalInformations" />
       <DateField source="published_at" />
-      <TextField source="first_name" />
-      <TextField source="last_name" />
-      <TextField source="jap_name" />
-      <TextField source="alias" />
-      <TextField source="other_spellings" />
-      <RichTextField source="body" />
       <DateField label="Publication date" source="created_at" />
     </SimpleShowLayout>
   </Show>
 );
 
-export const PostCreate = (props) => (
+export const NavCreate = (props) => (
   <Create {...props}>
     <SimpleForm>
       <TextField source="id" />
       <DateField source="published_at" />
-      <TextField source="first_name" />
-      <TextField source="last_name" />
-      <TextField source="jap_name" />
-      <TextField source="alias" />
-      <TextField source="other_spellings" />
-      <TextInput multiline source="body" />
+      <TextField source="BiologicalInformations" />
+      <DateField label="Publication date" source="created_at" />
     </SimpleForm>
   </Create>
 );
 
-export default Characters;
+// export const PostEdit = (props) => (
+//   <Edit {...props}>
+//     <SimpleForm>
+//       <TextField source="id" />
+//       <DateField source="published_at" />
+//       <TextField source="first_name" />
+//       <TextField source="last_name" />
+//       <TextField source="jap_name" />
+//       <TextField source="alias" />
+//       <TextField source="other_spellings" />
+//       {/* <TextInput multiline source="body" /> */}
+//     </SimpleForm>
+//   </Edit>
+// );
+
+export default Navigation;

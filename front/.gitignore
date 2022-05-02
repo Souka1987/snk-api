@@ -11,6 +11,8 @@
 # production
 /build
 
+src/build-watch
+
 # misc
 .DS_Store
 .env.local

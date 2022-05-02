@@ -11,6 +11,7 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslate } from "react-admin";
 import categories from "./data";
+import LinkToRelatedCustomers from "./LinkToRelatedCharacters";
 
 const useStyles = makeStyles({
   root: {
@@ -22,13 +23,16 @@ const Categories = () => {
   const classes = useStyles();
   const translate = useTranslate();
   return (
-    <Card className={classes.root}>
-      <Title title="Categories" />
-
+    <Card sx={{ mt: 8 }}>
+      <Title
+        title={translate("resources.categories.name", { smart_count: 2 })}
+      />
       <Table size="small">
         <TableHead>
           <TableRow>
-            <TableCell>Name</TableCell>
+            <TableCell>
+              {translate("resources.categories.fields.name")}
+            </TableCell>
             <TableCell />
           </TableRow>
         </TableHead>
@@ -37,7 +41,7 @@ const Categories = () => {
             <TableRow key={category.id}>
               <TableCell>{translate(category.name)}</TableCell>
               <TableCell>
-            
+                <LinkToRelatedCustomers category={category.id} />
               </TableCell>
             </TableRow>
           ))}
