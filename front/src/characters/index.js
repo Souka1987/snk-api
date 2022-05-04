@@ -1,14 +1,14 @@
-import PoepleIcon from '@mui/icons-material/People';
+import PeopleIcon from "@mui/icons-material/People";
+import CharacterCreate from "./CharacterCreate";
+import CharacterEdit from "./CharacterEdit";
+import CharacterList from "./CharacterList";
+import CharacterShow from "./CharacterShow";
 
-// import VisitorList from './VisitorList';
-// import VisitorCreate from './VisitorCreate';
-// import VisitorEdit from './VisitorEdit';
-
-const resource = {
-    // list: VisitorList,
-    // create: VisitorCreate,
-    // edit: VisitorEdit,
-    icon: PoepleIcon,
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {
+  list: CharacterList,
+  create: CharacterCreate,
+  edit: CharacterEdit,
+  show: CharacterShow,
+  icon: PeopleIcon,
 };
-
-export default resource;

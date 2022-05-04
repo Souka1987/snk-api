@@ -1,7 +1,6 @@
-import { Create, DateInput, SimpleForm, TextInput } from "react-admin";
+import { DateInput, Edit, SimpleForm, TextInput } from "react-admin";
 import { makeStyles } from "@material-ui/core/styles";
 // import { Avatar } from "@material-ui/core";
-
 
 export const styles = {
   // avatar: { display: "inline-block" },
@@ -14,12 +13,12 @@ export const styles = {
 };
 const useStyles = makeStyles(styles);
 
-export const CharacterCreate = (props) => {
+const CharacterEdit = (props) => {
   const classes = useStyles(props);
 
   // Components
   return (
-    <Create {...props}>
+    <Edit {...props}>
       <SimpleForm>
         <TextInput
           autoFocus
@@ -51,6 +50,8 @@ export const CharacterCreate = (props) => {
           defaultValue={new Date()}
         />
       </SimpleForm>
-    </Create>
+    </Edit>
   );
 };
+
+export default CharacterEdit;

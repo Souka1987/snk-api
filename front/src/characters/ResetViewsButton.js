@@ -1,5 +1,6 @@
+import { VisibilityOff } from '@mui/icons-material';
 import * as React from 'react';
-import { VisibilityOff } from '@material-ui/icons';
+
 import { BulkUpdateButton } from 'react-admin';
 
 const views = { views: 0 };
