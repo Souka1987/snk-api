@@ -63,8 +63,8 @@ export type ReviewStatus = 'accepted' | 'pending' | 'rejected';
 export interface Review extends RaRecord {
     date: Date;
     status: ReviewStatus;
-    customer_id: Identifier;
-    product_id: Identifier;
+    country_id: Identifier;
+    planet_id: Identifier;
 }
 
 declare global {

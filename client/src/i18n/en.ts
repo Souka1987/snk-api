@@ -243,13 +243,6 @@ const customEnglishMessages: TranslationMessages = {
         G20: "G20",
       },
     },
-    tags: {
-      name: "Tag |||| Tags",
-      fields: {
-        planets: "Planets",
-        name: "Name",
-      },
-    },
   },
 };
 

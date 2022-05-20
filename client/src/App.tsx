@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Admin, CustomRoutes, ListGuesser, Resource } from 'react-admin';
+import { Admin, CustomRoutes, EditGuesser, ListGuesser, Resource } from 'react-admin';
 import polyglotI18nProvider from 'ra-i18n-polyglot';
 import { Route } from 'react-router';
 
@@ -10,12 +10,9 @@ import englishMessages from './i18n/en';
 import { lightTheme } from './layout/themes';
 import jsonServerProvider from "ra-data-json-server";
 import countries from './countries';
-// import orders from './orders';
-// import planets from './planets';
-// import invoices from './invoices';
-// import categories from './categories';
-// import reviews from './reviews';
-// import dataProviderFactory from './dataProvider';
+import planets from './planets';
+import categories from './categories';
+import reviews from './reviews';
 import Configuration from './configuration/Configuration';
 import Segments from './segments/Segments'
 
@@ -42,7 +39,7 @@ const App = () => {
         <Admin
             title=""
             dataProvider={jsonServerProvider(
-                "http://localhost:1984",
+                "http://localhost:1984"
             )}
             authProvider={authProvider}
             // dashboard={Dashboard}
@@ -57,15 +54,9 @@ const App = () => {
                 <Route path="/segments" element={<Segments />} />
             </CustomRoutes>
             <Resource name="countries" {...countries} />
-            {/* <Resource
-                name="commands"
-                {...orders}
-                options={{ label: 'Orders' }}
-            /> */}
-            {/* <Resource name="invoices" {...invoices} /> */}
-            {/* <Resource name="planets" {...planets} /> */}
-            {/* <Resource name="categories" {...categories} /> */}
-            {/* <Resource name="reviews" {...reviews} /> */}
+            <Resource name="planets" {...planets} />
+            <Resource name="categories" {...categories} />
+            <Resource name="reviews"  {...EditGuesser} />
         </Admin>
     );
 };

@@ -13,7 +13,7 @@ const ImageField = ({ size = '100', sx }: Props) => {
     if (!record) return null;
     return (
         <Avatar
-            variant="square"
+        variant="rounded"
             src={`${record.image}?size=${size}x${size}`}
             style={{ width: parseInt(size, 10), height: parseInt(size, 10) }}
             sx={sx}

@@ -1,6 +1,31 @@
 {
   "categories": [],
-  "planets": [],
+  "planets": [
+    {
+      "sales": 0,
+      "image": "https://pixabay.com/get/ge1a67be3bb9c1df21e660f2f8735c45858f572ca656c58da8a503d1e57332a7f9fd9a375cc15a39a5d2735a73c8e13bc_640.jpg",
+      "thumbnail": "https://pixabay.com/get/ge1a67be3bb9c1df21e660f2f8735c45858f572ca656c58da8a503d1e57332a7f9fd9a375cc15a39a5d2735a73c8e13bc_640.jpg",
+      "reference": "Pink and white petaled flower",
+      "category_id": "nature",
+      "width": 640,
+      "height": 426,
+      "author": "Hong Zhang ",
+      "description": "Purple Flowers: Flowers come in a wide variety of colors. For instance, many of these colors bear huge symbolism and meanings. In particular red flowers symbolize love, yellow ones symbolize joy, white blossoms mean purity, and purple ones indicate nobility and elegance.",
+      "id": 1
+    },
+    {
+      "sales": 0,
+      "image": "https://pixabay.com/get/g9cd302b4eb39e540376ac11298d4a6442f0394e17c43a4655b815999dd1aca19c533e313ab3565890175c0aec3eacabb_640.jpg",
+      "thumbnail": "https://pixabay.com/get/g9cd302b4eb39e540376ac11298d4a6442f0394e17c43a4655b815999dd1aca19c533e313ab3565890175c0aec3eacabb_640.jpg",
+      "reference": "Desert",
+      "category_id": "landscape",
+      "width": 640,
+      "height": 426,
+      "author": "Jörg Peter",
+      "description": " A desert is a barren area of landscape where little precipitation occurs and, consequently, living conditions are hostile for plant and animal life. The lack of vegetation exposes the unprotected surface of the ground to the processes of denudation. About one-third of the land surface of the Earth is arid or semi-arid. This includes much of the polar regions, where little precipitation occurs, and which are sometimes called polar deserts or \"cold deserts\". Deserts can be classified by the amount of precipitation that falls, by the temperature that prevails, by the causes of desertification or by their geographical location.",
+      "id": 2
+    }
+  ],
   "segments": [],
   "configuration": [],
   "countries": [
@@ -47,7 +72,7 @@
       "info4": "Vichy regime 🏴󠁡󠁦󠁢󠁤󠁳󠁿",
       "title5": "Since 1958",
       "info5": "Fifth Republic 🇫🇷",
-      "currency": "€uro",
+      "currency": "EUR",
       "body": "<p><strong>France</strong>, officially <strong>French Republic</strong>, French <strong>France </strong>or <strong>République Française</strong>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.britannica.com/topic/nation-state\">country</a> of northwestern <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.britannica.com/place/Europe\">Europe</a>. Historically and culturally among the most important nations in the Western world, France has also played a highly significant role in international affairs, with former colonies in every corner of the globe. Bounded by the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.britannica.com/place/Atlantic-Ocean\">Atlantic Ocean</a> and the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.britannica.com/place/Mediterranean-Sea\">Mediterranean Sea</a>, the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.britannica.com/place/Alps\">Alps</a> and the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.britannica.com/place/Pyrenees\">Pyrenees</a>, France has long provided a geographic, economic, and linguistic bridge joining northern and southern Europe. It is Europe’s most important agricultural producer and one of the world’s leading industrial powers.</p>",
       "button": "https://www.britannica.com/place/France",
       "link": "https://www.britannica.com/place/France"
@@ -76,7 +101,7 @@
         "G7",
         "G20"
       ],
-      "currency": "$Dollars",
+      "currency": "USD",
       "button": "https://www.britannica.com/place/United-States",
       "title1": "1607",
       "info1": "Arrival of the first English settlers",
@@ -91,14 +116,5 @@
       "link": "https://www.britannica.com/place/United-States"
     }
   ],
-  "review": [],
-  "tags": [
-    {
-      "name": {
-        "en": "Cat",
-        "fr": "Chat"
-      },
-      "id": 1
-    }
-  ]
+  "review": []
 }

@@ -14,13 +14,14 @@ import {
 import countries from '../countries';
 // import orders from '../orders';
 // import invoices from '../invoices';
-// import planets from '../planets';
-// import categories from '../categories';
+import planets from '../planets';
+import categories from '../categories';
 // import reviews from '../reviews';
 import SubMenu from './SubMenu';
 import PublicIcon from '@mui/icons-material/Public';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import TagIcon from '@mui/icons-material/Tag';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 type MenuName = 'menuPlanet' | 'menuCountries';
 
@@ -77,7 +78,7 @@ const Menu = ({ dense = false }: MenuProps) => {
                     dense={dense}
                 />
             </SubMenu> */}
-            {/* <SubMenu
+            <SubMenu
                 handleToggle={() => handleToggle('menuPlanet')}
                 isOpen={state.menuPlanet}
                 name="pos.menu.planets"
@@ -96,13 +97,13 @@ const Menu = ({ dense = false }: MenuProps) => {
                 <MenuItemLink
                     to="/categories"
                     state={{ _scrollToTop: true }}
-                    primaryText={translate(`resources.segments.name`, {
+                    primaryText={translate(`resources.categories.name`, {
                         smart_count: 2,
                     })}
                     leftIcon={<TagIcon />}
                     dense={dense}
                 />
-            </SubMenu> */}
+            </SubMenu>
             <SubMenu
                 handleToggle={() => handleToggle('menuCountries')}
                 isOpen={state.menuCountries}
@@ -129,15 +130,15 @@ const Menu = ({ dense = false }: MenuProps) => {
                     dense={dense}
                 />
             </SubMenu>
-            {/* <MenuItemLink
-                to="/tags"
+            <MenuItemLink
+                to="/reviews"
                 state={{ _scrollToTop: true }}
-                primaryText={translate(`resources.tags.name`, {
+                primaryText={translate(`resources.reviews.name`, {
                     smart_count: 2,
                 })}
-                leftIcon={<TagIcon />}
+                leftIcon={<VisibilityIcon />}
                 dense={dense}
-            /> */}
+            />
         </Box>
     );
 };

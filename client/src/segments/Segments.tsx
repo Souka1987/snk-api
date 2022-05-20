@@ -13,7 +13,7 @@ import { useTranslate, Title } from 'react-admin';
 import segments from './data';
 import LinkToRelatedCountry from './LinkToRelatedCountry';
 
-const Catalog = () => {
+const Segments = () => {
     const translate = useTranslate();
     return (
         <Container sx={{ maxWidth: { xl: 1280 } }}>
@@ -46,4 +46,4 @@ const Catalog = () => {
     );
 };
 
-export default Catalog;
+export default Segments;
