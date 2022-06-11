@@ -82,9 +82,8 @@ const CountryShow = () => {
 
                         <Tab label="resources.form.body">
                             <TextField source="description" />
-                            <TextField source="history" />  
-                            <TextField source="link" />                                                                           
-                            {/* <ButtonLink /> */}
+                            <TextField source="history" />                                                                         
+                            <ButtonLink />
                             <Timelines />
                         </Tab>
 

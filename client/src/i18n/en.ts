@@ -21,10 +21,6 @@ const customEnglishMessages: TranslationMessages = {
       new_countries: "New Countries",
       all_countries: "See all countries",
       pending_orders: "Pending Orders",
-      order: {
-        items:
-          "by %{customer_name}, one item |||| by %{customer_name}, %{nb_items} items",
-      },
       welcome: {
         title: "Welcome to the react-admin e-commerce demo",
         subtitle:
@@ -34,10 +30,9 @@ const customEnglishMessages: TranslationMessages = {
       },
     },
     menu: {
-      // sales: 'Sales',
-      catalog: "Catalog",
       countries: "Countries",
       planets: "Planets",
+      universe: "Universe",
     },
   },
   resources: {
@@ -121,14 +116,14 @@ const customEnglishMessages: TranslationMessages = {
           total: "Total",
           unit_price: "Unit Price",
         },
-        address: "Address",
-        customer_id: "Customer",
-        date_gte: "Passed Since",
-        date_lte: "Passed Before",
-        nb_items: "Nb Items",
-        total_gte: "Min amount",
-        status: "Status",
-        returned: "Returned",
+        // address: "Address",
+        // customer_id: "Customer",
+        // date_gte: "Passed Since",
+        // date_lte: "Passed Before",
+        // nb_items: "Nb Items",
+        // total_gte: "Min amount",
+        // status: "Status",
+        // returned: "Returned",
       },
       section: {
         order: "Order",
@@ -142,12 +137,6 @@ const customEnglishMessages: TranslationMessages = {
       name: "Invoice |||| Invoices",
       fields: {
         date: "Invoice date",
-        customer_id: "Customer",
-        command_id: "Order",
-        date_gte: "Passed Since",
-        date_lte: "Passed Before",
-        total_gte: "Min amount",
-        address: "Address",
       },
     },
     planets: {
@@ -158,11 +147,7 @@ const customEnglishMessages: TranslationMessages = {
         height_lte: "Max height",
         height: "Height",
         image: "Image",
-        // price: "Price",
         reference: "Reference",
-        // sales: "Sales",
-        // stock_lte: "Low Stock",
-        // stock: "Stock",
         thumbnail: "Thumbnail",
         width_gte: "Min width",
         width_lte: "Max width",

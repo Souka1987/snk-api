@@ -5,7 +5,7 @@ import { useTranslate } from 'react-admin';
 import { stringify } from 'query-string';
 import PublicIcon from '@mui/icons-material/Public';
 
-import countries from '../countries';
+// import countries from '../countries';
 
 const LinkToRelatedCountry = ({ segment }: { segment: string }) => {
     const translate = useTranslate();

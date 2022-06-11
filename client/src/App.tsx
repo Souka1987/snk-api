@@ -12,7 +12,7 @@ import jsonServerProvider from "ra-data-json-server";
 import countries from './countries';
 import planets from './planets';
 import categories from './categories';
-import reviews from './reviews';
+// import reviews from './reviews';
 import Configuration from './configuration/Configuration';
 import Segments from './segments/Segments'
 
@@ -56,7 +56,7 @@ const App = () => {
             <Resource name="countries" {...countries} />
             <Resource name="planets" {...planets} />
             <Resource name="categories" {...categories} />
-            <Resource name="reviews"  {...EditGuesser} />
+            {/* <Resource name="reviews"  {...EditGuesser} /> */}
         </Admin>
     );
 };

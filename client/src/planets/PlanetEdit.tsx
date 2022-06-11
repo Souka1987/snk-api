@@ -19,7 +19,7 @@ import { RichTextInput } from 'ra-input-rich-text';
 
 import { PlanetEditDetails } from './PlanetEditDetails';
 import CountryReferenceField from '../countries/CountryReferenceField';
-import StarRatingField from '../reviews/StarRatingField';
+// import StarRatingField from '../reviews/StarRatingField';
 import Poster from './Poster';
 import { Planet } from '../types';
 import { Container, CssBaseline } from '@mui/material';

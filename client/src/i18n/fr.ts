@@ -9,8 +9,8 @@ const customFrenchMessages: TranslationMessages = {
     language: "Langue",
     theme: {
       name: "Theme",
-      light: "Clair",
-      dark: "Obscur",
+      light: "Claire",
+      dark: "Obscure",
     },
     dashboard: {
       monthly_revenue: "CA à 30 jours",
@@ -21,10 +21,6 @@ const customFrenchMessages: TranslationMessages = {
       new_customers: "Nouveaux clients",
       all_customers: "Voir tous les clients",
       pending_orders: "Commandes à traiter",
-      order: {
-        items:
-          "par %{customer_name}, un poster |||| par %{customer_name}, %{nb_items} posters",
-      },
       welcome: {
         title: "Bienvenue sur la démo e-commerce de react-admin",
         subtitle:
@@ -34,10 +30,9 @@ const customFrenchMessages: TranslationMessages = {
       },
     },
     menu: {
-      //   sales: "Ventes",
-      catalog: "Catalogue",
       countries: "Pays",
       planets: "Planètes",
+      universe: "Univers",
     },
   },
   resources: {
@@ -232,7 +227,7 @@ const customFrenchMessages: TranslationMessages = {
       fields: {
         countries: "Pays",
         planets: "Planètes",
-        name: "Name",
+        name: "Nom",
       },
       data: {
         // Continents

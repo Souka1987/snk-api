@@ -3,10 +3,10 @@ import { defaultTheme } from "react-admin";
 export const darkTheme = {
   palette: {
     primary: {
-      main: "#536DFE",
+      main: "#1073FF",
     },
     secondary: {
-      main: "#536DFE",
+      main: "#1073FF",
     },
     mode: "dark" as "dark", // Switching the dark mode on is a single property value change.
   },
@@ -39,16 +39,16 @@ export const darkTheme = {
 export const lightTheme = {
   palette: {
     primary: {
-      main: "#536DFE",
+      main: "#2520C7",
     },
     secondary: {
-      light: "#536DFE",
-      main: "#536DFE",
-      dark: "#536DFE",
+      light: "#2520C7",
+      main: "#2520C7",
+      dark: "#2520C7",
       contrastText: "#fff",
     },
     background: {
-      default: "#FCFCFC",
+      default: "#F5FFFE",
     },
     mode: "light" as "light",
   },

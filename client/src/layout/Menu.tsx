@@ -21,7 +21,7 @@ import SubMenu from './SubMenu';
 import PublicIcon from '@mui/icons-material/Public';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import TagIcon from '@mui/icons-material/Tag';
-import VisibilityIcon from '@mui/icons-material/Visibility';
+// import VisibilityIcon from '@mui/icons-material/Visibility';
 
 type MenuName = 'menuPlanet' | 'menuCountries';
 
@@ -52,36 +52,10 @@ const Menu = ({ dense = false }: MenuProps) => {
             }}
         >
             {/* <DashboardMenuItem /> */}
-            {/* <SubMenu
-                handleToggle={() => handleToggle('menuSales')}
-                isOpen={state.menuSales}
-                name="pos.menu.sales"
-                icon={<orders.icon />}
-                dense={dense}
-            >
-                <MenuItemLink
-                    to="/commands"
-                    state={{ _scrollToTop: true }}
-                    primaryText={translate(`resources.commands.name`, {
-                        smart_count: 2,
-                    })}
-                    leftIcon={<orders.icon />}
-                    dense={dense}
-                />
-                <MenuItemLink
-                    to="/invoices"
-                    state={{ _scrollToTop: true }}
-                    primaryText={translate(`resources.invoices.name`, {
-                        smart_count: 2,
-                    })}
-                    leftIcon={<invoices.icon />}
-                    dense={dense}
-                />
-            </SubMenu> */}
             <SubMenu
                 handleToggle={() => handleToggle('menuPlanet')}
                 isOpen={state.menuPlanet}
-                name="pos.menu.planets"
+                name="pos.menu.universe"
                 icon={<AutoAwesomeIcon />}
                 dense={dense}
             >
@@ -130,7 +104,7 @@ const Menu = ({ dense = false }: MenuProps) => {
                     dense={dense}
                 />
             </SubMenu>
-            <MenuItemLink
+            {/* <MenuItemLink
                 to="/reviews"
                 state={{ _scrollToTop: true }}
                 primaryText={translate(`resources.reviews.name`, {
@@ -138,7 +112,7 @@ const Menu = ({ dense = false }: MenuProps) => {
                 })}
                 leftIcon={<VisibilityIcon />}
                 dense={dense}
-            />
+            /> */}
         </Box>
     );
 };
