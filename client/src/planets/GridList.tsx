@@ -3,6 +3,26 @@ import { useTheme, useMediaQuery } from '@mui/material';
 import { Box, ImageList, ImageListItem, ImageListItemBar } from '@mui/material';
 import { useCreatePath, NumberField, useListContext } from 'react-admin';
 import { Link } from 'react-router-dom';
+import { styled } from '@mui/material/styles';
+import Card from '@mui/material/Card';
+import IconButton, { IconButtonProps } from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import { blue } from '@mui/material/colors';
+
+interface ExpandMoreProps extends IconButtonProps {
+    expand: boolean;
+}
+
+const ExpandMore = styled((props: ExpandMoreProps) => {
+    const { expand, ...other } = props;
+    return <IconButton {...other} />;
+})(({ theme, expand }) => ({
+    transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
+    marginLeft: 'auto',
+    transition: theme.transitions.create('transform', {
+        duration: theme.transitions.duration.shortest,
+    }),
+}));
 
 const GridList = () => {
     const { isLoading } = useListContext();
@@ -32,9 +52,9 @@ const LoadingGridList = () => {
     return (
         <ImageList rowHeight={180} cols={cols} sx={{ m: 0 }}>
             {times(perPage, key => (
-                <ImageListItem key={key}>
+                <Card key={key}>
                     <Box bgcolor="grey.300" height="100%" />
-                </ImageListItem>
+                </Card>
             ))}
         </ImageList>
     );
@@ -50,41 +70,47 @@ const LoadedGridList = () => {
     return (
         <ImageList rowHeight={180} cols={cols} sx={{ m: 0 }}>
             {data.map(record => (
-                <ImageListItem
-                    component={Link}
-                    key={record.id}
-                    to={createPath({
-                        resource: 'planets',
-                        id: record.id,
-                        type: 'edit',
-                    })}
-                >
-                    <img src={record.thumbnail} alt="" />
-                    <ImageListItemBar
-                        title={record.reference}
-                        subtitle={
-                            <span>
-                                {record.height}x{record.width},{' '}
-                                <NumberField
-                                    source="price"
-                                    record={record}
-                                    color="inherit"
-                                    sx={{
-                                        display: 'inline',
-                                        fontSize: '1em',
-                                    }}
-                                />
-                            </span>
-                        }
-                        sx={{
-                            background:
-                                'linear-gradient(to top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.4) 70%,rgba(0,0,0,0) 100%)',
-                        }}
-                    />
-                </ImageListItem>
+                <Card sx={{ maxWidth: 345 }}>
+                    <ImageListItem
+                        component={Link}
+                        key={record.id}
+                        to={createPath({
+                            resource: 'planets',
+                            id: record.id,
+                            type: 'edit',
+                        })}
+                    >
+                        <img src={record.thumbnail} alt="" />
+                        <ImageListItemBar
+                            title={record.reference}
+                            subtitle={
+                                <span>
+                                    {record.category_id}
+                                    {/* {record.height}x{record.width},{' '}
+                                    <NumberField
+                                        source="price"
+                                        record={record}
+                                        color="inherit"
+                                        sx={{
+                                            display: 'inline',
+                                            fontSize: '1em',
+                                        }}
+                                    /> */}
+                                </span>
+                            }
+                            sx={{
+                                background:
+                                    'linear-gradient(to top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.4) 70%,rgba(0,0,0,0) 100%)',
+                            }}
+                        />
+                    </ImageListItem>
+                </Card>
             ))}
         </ImageList>
     );
+
 };
 
 export default GridList;
+
+

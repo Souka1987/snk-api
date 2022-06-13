@@ -1,31 +1,6 @@
 {
   "categories": [],
-  "planets": [
-    {
-      "sales": 0,
-      "image": "https://pixabay.com/get/ge1a67be3bb9c1df21e660f2f8735c45858f572ca656c58da8a503d1e57332a7f9fd9a375cc15a39a5d2735a73c8e13bc_640.jpg",
-      "thumbnail": "https://pixabay.com/get/ge1a67be3bb9c1df21e660f2f8735c45858f572ca656c58da8a503d1e57332a7f9fd9a375cc15a39a5d2735a73c8e13bc_640.jpg",
-      "reference": "Pink and white petaled flower",
-      "category_id": "nature",
-      "width": 640,
-      "height": 426,
-      "author": "Hong Zhang ",
-      "description": "Purple Flowers: Flowers come in a wide variety of colors. For instance, many of these colors bear huge symbolism and meanings. In particular red flowers symbolize love, yellow ones symbolize joy, white blossoms mean purity, and purple ones indicate nobility and elegance.",
-      "id": 1
-    },
-    {
-      "sales": 0,
-      "image": "https://pixabay.com/get/g9cd302b4eb39e540376ac11298d4a6442f0394e17c43a4655b815999dd1aca19c533e313ab3565890175c0aec3eacabb_640.jpg",
-      "thumbnail": "https://pixabay.com/get/g9cd302b4eb39e540376ac11298d4a6442f0394e17c43a4655b815999dd1aca19c533e313ab3565890175c0aec3eacabb_640.jpg",
-      "reference": "Desert",
-      "category_id": "landscape",
-      "width": 640,
-      "height": 426,
-      "author": "Jörg Peter",
-      "description": " A desert is a barren area of landscape where little precipitation occurs and, consequently, living conditions are hostile for plant and animal life. The lack of vegetation exposes the unprotected surface of the ground to the processes of denudation. About one-third of the land surface of the Earth is arid or semi-arid. This includes much of the polar regions, where little precipitation occurs, and which are sometimes called polar deserts or \"cold deserts\". Deserts can be classified by the amount of precipitation that falls, by the temperature that prevails, by the causes of desertification or by their geographical location.",
-      "id": 2
-    }
-  ],
+  "planets": [],
   "segments": [],
   "configuration": [],
   "countries": [
@@ -35,7 +10,7 @@
       "capital": "Paris",
       "head_of_state": " Emmanuel Macron",
       "head_of_government": "Jean Castex",
-      "people": "French",
+      "people": "French, Overseas French",
       "official_language": "french",
       "form_of_government": "Republic",
       "avatar": "https://www.countryflags.com/wp-content/uploads/france-flag-png-large.png",
@@ -83,7 +58,7 @@
       "capital": "Washington, D.C.",
       "head_of_state": "Joe Biden",
       "head_of_government": "",
-      "people": "American",
+      "people": "Americans",
       "official_language": "English",
       "form_of_government": "Federal Republic",
       "avatar": "https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png",
@@ -94,13 +69,7 @@
       "segments": [],
       "id": 2,
       "Official_language": "English",
-      "groups": [
-        "america",
-        "United_Nations",
-        "NATO",
-        "G7",
-        "G20"
-      ],
+      "groups": ["america", "United_Nations", "NATO", "G7", "G20"],
       "currency": "USD",
       "button": "https://www.britannica.com/place/United-States",
       "title1": "1607",

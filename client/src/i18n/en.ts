@@ -78,6 +78,7 @@ const customEnglishMessages: TranslationMessages = {
         has_ordered: "Has ordered",
         has_newsletter: "Has newsletter",
         group: "Segment",
+        tag: "Category",
       },
       fieldGroups: {
         informations: "Informations",
@@ -142,7 +143,6 @@ const customEnglishMessages: TranslationMessages = {
     planets: {
       name: "Planet |||| Planets",
       fields: {
-        tag_id: "Tag",
         height_gte: "Min height",
         height_lte: "Max height",
         height: "Height",
@@ -173,13 +173,6 @@ const customEnglishMessages: TranslationMessages = {
         never_sold: "Never sold",
       },
     },
-    categories: {
-      name: "Category |||| Categories",
-      fields: {
-        name: "Name",
-        planets: "Planets",
-      },
-    },
     reviews: {
       name: "Review |||| Reviews",
       amount: "1 review |||| %{smart_count} reviews",
@@ -204,6 +197,26 @@ const customEnglishMessages: TranslationMessages = {
         approved_error: "Error: Review not approved",
         rejected_success: "Review rejected",
         rejected_error: "Error: Review not rejected",
+      },
+    },
+    categories: {
+      name: "Category |||| Categories",
+      fields: {
+        countries: "Countries",
+        planets: "Planets",
+        name: "Name",
+      },
+      data: {
+        // manga  "💢 manga",
+        animals:  "🦘 animals",
+        cities:  "🌆 cities",
+        landscape:  "🖼️ landscape",
+        // people:  "🧑 people",
+        nature: "🌱 nature",
+        politics: "🏛️ politics",
+        science: "🧬 science",
+        cinema: "🎥 cinema",
+        history: "🏺 history",
       },
     },
     segments: {

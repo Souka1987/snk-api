@@ -15,7 +15,7 @@ import countries from '../countries';
 // import orders from '../orders';
 // import invoices from '../invoices';
 import planets from '../planets';
-import categories from '../categories';
+// import categories from '../categories';
 // import reviews from '../reviews';
 import SubMenu from './SubMenu';
 import PublicIcon from '@mui/icons-material/Public';
@@ -68,7 +68,7 @@ const Menu = ({ dense = false }: MenuProps) => {
                     leftIcon={<AutoAwesomeIcon />}
                     dense={dense}
                 />
-                <MenuItemLink
+                {/* <MenuItemLink
                     to="/categories"
                     state={{ _scrollToTop: true }}
                     primaryText={translate(`resources.categories.name`, {
@@ -76,7 +76,7 @@ const Menu = ({ dense = false }: MenuProps) => {
                     })}
                     leftIcon={<TagIcon />}
                     dense={dense}
-                />
+                /> */}
             </SubMenu>
             <SubMenu
                 handleToggle={() => handleToggle('menuCountries')}

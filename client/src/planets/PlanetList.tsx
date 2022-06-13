@@ -8,7 +8,6 @@ import {
     FilterContext,
     InputProps,
     ListBase,
-    NumberInput,
     Pagination,
     ReferenceInput,
     SearchInput,
@@ -21,15 +20,13 @@ import {
 } from 'react-admin';
 
 import ImageList from './GridList';
-import Aside from './Aside';
+// import Aside from './Aside';
 import { Container, CssBaseline } from '@mui/material';
 
 const PlanetList = () => {
     const getResourceLabel = useGetResourceLabel();
     const isSmall = useMediaQuery<Theme>(theme => theme.breakpoints.down('md'));
     return (
-        <Container sx={{ maxWidth: { xl: 1280 } }}>
-            <CssBaseline />
             <ListBase perPage={24} sort={{ field: 'reference', order: 'ASC' }}>
                 <Title defaultTitle={getResourceLabel('planets', 2)} />
                 <FilterContext.Provider value={planetFilters}>
@@ -41,14 +38,14 @@ const PlanetList = () => {
                     )}
                 </FilterContext.Provider>
                 <Box display="flex">
-                    <Aside />
+                    {/* <Aside /> */}
                     <Box width={isSmall ? 'auto' : 'calc(100% - 16em)'}>
                         <ImageList />
                         <Pagination rowsPerPageOptions={[12, 24, 48, 72]} />
                     </Box>
                 </Box>
             </ListBase>
-        </Container>
+        
     );
 };
 
@@ -72,7 +69,7 @@ export const planetFilters = [
 const ListActions = ({ isSmall }: any) => (
     <TopToolbar sx={{ minHeight: { sm: 56 } }}>
         {isSmall && <FilterButton />}
-        <SortButton fields={['reference', 'sales', 'stock']} />
+        <SortButton fields={['reference']} />
         <CreateButton />
         <ExportButton />
     </TopToolbar>

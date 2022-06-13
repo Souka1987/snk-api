@@ -3,7 +3,6 @@ import { Admin, CustomRoutes, EditGuesser, ListGuesser, Resource } from 'react-a
 import polyglotI18nProvider from 'ra-i18n-polyglot';
 import { Route } from 'react-router';
 
-import authProvider from './authProvider';
 import { Login, Layout } from './layout';
 // import { Dashboard } from './dashboard';
 import englishMessages from './i18n/en';
@@ -11,8 +10,6 @@ import { lightTheme } from './layout/themes';
 import jsonServerProvider from "ra-data-json-server";
 import countries from './countries';
 import planets from './planets';
-import categories from './categories';
-// import reviews from './reviews';
 import Configuration from './configuration/Configuration';
 import Segments from './segments/Segments'
 
@@ -41,7 +38,6 @@ const App = () => {
             dataProvider={jsonServerProvider(
                 "http://localhost:1984"
             )}
-            authProvider={authProvider}
             // dashboard={Dashboard}
             loginPage={Login}
             layout={Layout}
@@ -55,8 +51,6 @@ const App = () => {
             </CustomRoutes>
             <Resource name="countries" {...countries} />
             <Resource name="planets" {...planets} />
-            <Resource name="categories" {...categories} />
-            {/* <Resource name="reviews"  {...EditGuesser} /> */}
         </Admin>
     );
 };

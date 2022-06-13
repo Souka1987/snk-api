@@ -1,28 +1,13 @@
 import { Avatar, Box, Container, CssBaseline, Grid } from '@mui/material';
 import * as React from 'react';
 import {
-    // ArrayField,
-    // BooleanField,
-    // CloneButton,
-    // ChipField,
-    // Datagrid,
-    // DateField,
-    // EditButton,
-    // NumberField,
-    // ReferenceArrayField,
-    // ReferenceManyField,
-    // RichTextField,
-    // SelectField,
     ShowContextProvider,
     ShowView,
-    // SingleFieldList,
     Tab,
     TabbedShowLayout,
     TextField,
-    // UrlField,
     useShowController,
     useLocaleState,
-    // useRecordContext,
 } from 'react-admin';
 import AvatarField2 from './AvatarField2';
 import ButtonLink from './ButtonLink';

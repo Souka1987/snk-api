@@ -22,7 +22,10 @@ import CountryReferenceField from '../countries/CountryReferenceField';
 // import StarRatingField from '../reviews/StarRatingField';
 import Poster from './Poster';
 import { Planet } from '../types';
-import { Container, CssBaseline } from '@mui/material';
+import { Container, CssBaseline, InputAdornment } from '@mui/material';
+import DescriptionIcon from '@mui/icons-material/Description';
+import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
+import InsertLinkIcon from '@mui/icons-material/InsertLink';
 
 const ProductTitle = () => {
     const record = useRecordContext<Planet>();
@@ -39,8 +42,36 @@ const PlanetEdit = () => (
                     sx={{ maxWidth: '40em' }}
                 >
                     <Poster />
-                    <TextInput source="image" sx={{ mt: 5 }} fullWidth validate={req} />
-                    <TextInput source="thumbnail" fullWidth validate={req} />
+                    <TextInput
+                        sx={{ mt: 2 }}
+                        source="image"
+                        fullWidth
+                        validate={required()}
+                        label='Image'
+                        id="input-with-icon-textfield"
+                        InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                    <InsertPhotoIcon />
+                                </InputAdornment>
+                            ),
+                        }}
+                    />
+                    <TextInput
+                        sx={{ m: 0 }}
+                        source="thumbnail"
+                        fullWidth
+                        validate={required()}
+                        label='Thumbnail'
+                        id="input-with-icon-textfield"
+                        InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                    <InsertPhotoIcon />
+                                </InputAdornment>
+                            ),
+                        }}
+                    />
                 </FormTab>
                 <FormTab
                     label="resources.planets.tabs.details"
@@ -54,9 +85,35 @@ const PlanetEdit = () => (
                     path="description"
                     sx={{ maxWidth: '40em' }}
                 >
-                    <TextInput source="description" multiline
-                        rows={5}
-                        fullWidth validate={req} />
+                    <TextInput
+                        source="description"
+                        multiline
+                        rows={3}
+                        fullWidth
+                        label='Description'
+                        id="input-with-icon-textfield"
+                        InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                    <DescriptionIcon />
+                                </InputAdornment>
+                            ),
+                        }}
+                    />
+
+                    <TextInput
+                        source="link"
+                        fullWidth
+                        label='Link'
+                        id="input-with-icon-textfield"
+                        InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                    <InsertLinkIcon />
+                                </InputAdornment>
+                            ),
+                        }}
+                    />
                 </FormTab>
                 {/* <ReviewsFormTab path="reviews">
                     <ReferenceManyField

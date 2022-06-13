@@ -12,7 +12,7 @@ const Poster = () => {
                 component="img"
                 image={record.image}
                 alt=""
-                sx={{ maxWidth: '42em', maxHeight: '15em' }}
+                sx={{ maxWidth: '45em', maxHeight: '15em' }}
             />
         </Card>
     );

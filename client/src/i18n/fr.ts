@@ -54,16 +54,10 @@ const customFrenchMessages: TranslationMessages = {
     countries: {
       name: "Pays |||| Pays",
       fields: {
-        //   commands: "Orders",
         first_seen: "Première vue",
         groups: "Segments",
         last_seen: "Dernière vue",
-        //   last_seen_gte: "Visited Since",
         name: "Nom",
-        //   total_spent: "Total spent",
-        //   password: "Password",
-        //   confirm_password: "Confirm password",
-        //   stateAbbr: "State",
         title: "Titre",
         tags: "Tags",
       },
@@ -75,9 +69,9 @@ const customFrenchMessages: TranslationMessages = {
         this_month: "Ce mois-ci",
         last_month: "Le mois dernier",
         earlier: "Plus tôt",
-        has_ordered: "A déjà commandé",
-        has_newsletter: "Abonné newsletter",
+        // has_ordered: "A déjà commandé",
         group: "Segment",
+        tag: "Catégorie",
       },
       fieldGroups: {
         informations: "Informations",
@@ -188,13 +182,6 @@ const customFrenchMessages: TranslationMessages = {
         never_sold: "Jamais vendu",
       },
     },
-    categories: {
-      name: "Catégorie |||| Catégories",
-      fields: {
-        name: "Nom",
-        planets: "Planètes",
-      },
-    },
     reviews: {
       name: "Commentaire |||| Commentaires",
       amount: "1 commentaire |||| %{smart_count} commentaires",
@@ -220,6 +207,17 @@ const customFrenchMessages: TranslationMessages = {
         approved_error: "Erreur: Commentaire non approuvé",
         rejected_success: "Commentaire rejeté",
         rejected_error: "Erreur: Commentaire non rejeté",
+      },
+    },
+    categories: {
+      name: "Category |||| Categories",
+      fields: {
+        countries: "Pays",
+        planets: "Planètes",
+        name: "Name",
+      },
+      data: {
+        science: "Science 🧬",
       },
     },
     segments: {
