@@ -10,7 +10,7 @@ export default function ButtonLink() {
     if (!record) return null;
     return (
         <Stack direction="row" spacing={2}>
-            <Button variant="outlined" startIcon={<InfoIcon />} href={`${record.author}`} target="_blank">
+            <Button  size="small" variant="outlined" startIcon={<InfoIcon />} href={`${record.author}`} target="_blank">
                 Source 👇
             </Button>
         </Stack>

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Admin, CustomRoutes, EditGuesser, ListGuesser, Resource } from 'react-admin';
+import { Admin, CustomRoutes, Resource } from 'react-admin';
 import polyglotI18nProvider from 'ra-i18n-polyglot';
 import { Route } from 'react-router';
 
@@ -13,14 +13,7 @@ import planets from './planets';
 import Configuration from './configuration/Configuration';
 import Segments from './segments/Segments'
 
-const dataProvider = jsonServerProvider("http://localhost:1984");
 
-// Config CORS
-const httpClient = (url: any, options = {}) => {
-    if (!options) {
-        options = new Headers({ Accept: "application/json" });
-    }
-};
 
 const i18nProvider = polyglotI18nProvider(locale => {
     if (locale === 'fr') {

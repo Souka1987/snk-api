@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Box, Chip, useMediaQuery, Theme } from '@mui/material';
 import {
     CreateButton,
@@ -20,8 +19,6 @@ import {
 } from 'react-admin';
 
 import ImageList from './GridList';
-// import Aside from './Aside';
-import { Container, CssBaseline } from '@mui/material';
 
 const PlanetList = () => {
     const getResourceLabel = useGetResourceLabel();
@@ -38,7 +35,6 @@ const PlanetList = () => {
                     )}
                 </FilterContext.Provider>
                 <Box display="flex">
-                    {/* <Aside /> */}
                     <Box width={isSmall ? 'auto' : 'calc(100% - 16em)'}>
                         <ImageList />
                         <Pagination rowsPerPageOptions={[12, 24, 48, 72]} />

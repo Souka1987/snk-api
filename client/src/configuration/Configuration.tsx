@@ -48,7 +48,7 @@ const Configuration = () => {
                         {translate('pos.theme.dark')}
                     </Button>
                 </CardContent>
-                <CardContent>
+                {/* <CardContent>
                     <Box sx={{ width: '10em', display: 'inline-block' }}>
                         {translate('pos.language')}
                     </Box>
@@ -68,7 +68,7 @@ const Configuration = () => {
                     >
                         fr
                     </Button>
-                </CardContent>
+                </CardContent> */}
             </Card>
         </Container>
     );

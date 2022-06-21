@@ -10,8 +10,8 @@ export default function ButtonLink() {
     if (!record) return null;
     return (
         <Stack direction="row" spacing={2}>
-            <Button variant="outlined" startIcon={<InfoIcon />} href={`${record.description}`} target="_blank">
-                Source 👇
+            <Button size="small" variant="outlined" startIcon={<InfoIcon />} href={`${record.description}`} target="_blank">
+                Read more
             </Button>
         </Stack>
     );

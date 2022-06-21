@@ -56,15 +56,15 @@ const PlanetShow = () => {
                                 'Fusce massa lorem, pulvinar a posuere ut, accumsan ac nisi' && (
                                     <TextField source="teaser" />
                                 )}
+                            <TextField source="description" />
+                            {/* <ButtonLink2 /> */}
                         </Tab>
                         {/* <Tab label="resources.form.infos">
-                            
                         </Tab> */}
-
-                        <Tab label="resources.form.body">
+                        {/* <Tab label="resources.form.body">
                             <TextField source="description" />
                             <ButtonLink2 />
-                        </Tab>
+                        </Tab> */}
                         {/* <Tab label="resources.form.comments">
                             <ReferenceManyField
                                 reference="comments"

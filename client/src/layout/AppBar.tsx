@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { AppBar, Logout, UserMenu, useTranslate } from 'react-admin';
+import { AppBar, Logout, UserMenu, useTranslate, LocalesMenuButton } from 'react-admin';
 import { Link } from 'react-router-dom';
 import {
     Box,
@@ -49,7 +49,14 @@ const CustomAppBar = (props: any) => {
             elevation={1}
             userMenu={<CustomUserMenu />}
         >
-            <Typography
+            <Typography flex="1" variant="h6" id="react-admin-title"></Typography>
+            <LocalesMenuButton
+                languages={[
+                    { locale: 'en', name: 'English' },
+                    { locale: 'fr', name: 'Français' },
+                ]}
+            />
+            {/* <Typography
                 variant="h6"
                 color="inherit"
                 sx={{
@@ -59,9 +66,9 @@ const CustomAppBar = (props: any) => {
                     overflow: 'hidden',
                 }}
                 id="react-admin-title"
-            />
+            /> */}
             {/* {isLargeEnough && <Logo />} */}
-            {isLargeEnough && <Box component="span" sx={{ flex: 1 }} />}
+            {/* {isLargeEnough && <Box component="span" sx={{ flex: 1 }} />} */}
         </AppBar>
     );
 };

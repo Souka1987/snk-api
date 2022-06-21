@@ -1,6 +1,29 @@
 {
   "categories": [],
-  "planets": [],
+  "planets": [
+    {
+      "sales": 0,
+      "image": "https://www.koeitecmoamerica.com/attackontitan/stage/22.jpg",
+      "thumbnail": "https://www.koeitecmoamerica.com/attackontitan/stage/22.jpg",
+      "reference": "Stohess District (Attack On Titans)",
+      "category_id": "🖼️ landscape",
+      "author": "https://www.koeitecmoamerica.com/attackontitan/stage.html",
+      "description": "The Stohess District is the town located on the east edge of Wall Sina. At some unknown point in the past, the Royal Government ordered the construction of an underground city below this district and others within Wall Sina, but the plan was abandoned during construction leaving unused tunnels below the city.",
+      "link": "https://attackontitan.fandom.com/wiki/Stohess_District ",
+      "id": 1
+    },
+    {
+      "sales": 0,
+      "image": "https://cdna.artstation.com/p/assets/images/images/047/118/762/4k/raymond-chen-rumbling-final.jpg",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/047/118/762/4k/raymond-chen-rumbling-final.jpg",
+      "reference": "The Rumbling (Attack On Titans)",
+      "category_id": "💢 manga",
+      "author": "https://cdna.artstation.com/p/assets/images/images/047/118/762/4k/raymond-chen-rumbling-final.jpg",
+      "description": "erfezqtgzegtzeetgeshwrdwhjth",
+      "link": "",
+      "id": 2
+    }
+  ],
   "segments": [],
   "configuration": [],
   "countries": [
@@ -9,7 +32,7 @@
       "also_known_as": "French Republic",
       "capital": "Paris",
       "head_of_state": " Emmanuel Macron",
-      "head_of_government": "Jean Castex",
+      "head_of_government": "Élisabeth Borne",
       "people": "French, Overseas French",
       "official_language": "french",
       "form_of_government": "Republic",
@@ -21,10 +44,7 @@
       "groups": [
         "europe",
         "European_Union",
-        "United_Nations",
-        "G7",
-        "G20",
-        "NATO"
+        "United_Nations"
       ],
       "description": "France, officially French Republic, French France or République Française, country of northwestern Europe. Historically and culturally among the most important nations in the Western world, France has also played a highly significant role in international affairs, with former colonies in every corner of the globe. Bounded by the Atlantic Ocean and the Mediterranean Sea, the Alps and the Pyrenees, France has long provided a geographic, economic, and linguistic bridge joining northern and southern Europe. It is Europe’s most important agricultural producer and one of the world’s leading industrial powers. ",
       "story": "",
@@ -69,7 +89,10 @@
       "segments": [],
       "id": 2,
       "Official_language": "English",
-      "groups": ["america", "United_Nations", "NATO", "G7", "G20"],
+      "groups": [
+        "america",
+        "United_Nations"
+      ],
       "currency": "USD",
       "button": "https://www.britannica.com/place/United-States",
       "title1": "1607",
